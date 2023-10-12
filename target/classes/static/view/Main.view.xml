@@ -1,0 +1,113 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+ xmlns="sap.m"
+ xmlns:l="sap.ui.layout"
+ xmlns:f="sap.ui.layout.form"
+ xmlns:core="sap.ui.core"
+ xmlns:t="sap.ui.table"
+ controllerName="bharath.controller.Main"> 
+ 
+ 
+<Page title="Welcome to my App">
+<Button text="LoadData" press="onLoadData"></Button>
+
+<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" 
+			>
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<Title id="Title1" text="Address"/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+					<Button icon="sap-icon://drop-down-list" />
+				</Toolbar>
+			</f:toolbar>
+			<f:content>
+				<Label text="Company Name" />
+				<Input value="{/postPayload/companyName}" />
+				
+				<Label text="Contact Name" />
+				<Input value="{/postPayload/contactPerson}" />	
+
+				<Label text="First Name" />
+				<Input value="{/postPayload/firstName}" />
+
+				<Label text="Last Name" />
+				<Input value="{/postPayload/lastName}" />
+				
+				<Label text="Website"/>
+				<Input value="{/postPayload/website}" />		
+				
+				<Label text="Email" />
+				<Input value="{/postPayload/email}" />		
+				
+				<Label text="Status" />
+				<Input value="{/postPayload/status}" />	
+				
+				<Label text="Reg Date" />
+				<Input value="{/postPayload/regDate}" />										
+				
+											
+			</f:content>
+		</f:SimpleForm>	
+	
+		
+<t:Table id="idTable">
+	<t:columns>
+		<t:Column>
+			<t:label>
+				<Text text="Company Name"></Text>
+			</t:label>
+			<t:template>
+				<Text text="{companyName}"></Text>
+	        </t:template>	
+		</t:Column>		<t:Column>
+			<t:label>
+				<Text text="Contact Name"></Text>
+			</t:label>
+			<t:template>
+				<Text text="{contactPerson}"></Text>
+	        </t:template>	
+		</t:Column>
+		<t:Column>
+			<t:label>
+				<Text text="Email"></Text>
+			</t:label>
+			<t:template>
+				<Text text="{email}"></Text>
+	        </t:template>	
+		</t:Column>		
+		<t:Column>
+			<t:label>
+				<Text text="Website"></Text>
+			</t:label>
+			<t:template>
+				<Text text="{website}"></Text>
+	        </t:template>	
+		</t:Column>	        	
+	</t:columns>
+	
+</t:Table>
+<footer>
+<Toolbar>
+<Button text="SAVE" press="onSave" type="Emphasized">
+</Button>
+</Toolbar>
+</footer>
+</Page>
+
+</mvc:View>
