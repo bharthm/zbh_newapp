@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.zbhar.postgre_vend.PostgreVendApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.839 s - in com.zbhar.postgre_vend.PostgreVendApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.315 s - in com.zbhar.postgre_vend.PostgreVendApplicationTests
