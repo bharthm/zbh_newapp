@@ -38,7 +38,7 @@ public class address {
     public address(String code, String companyAddress, String streetName, String cityName, String state, String country,
             Integer mobileNumb) {
         this.code = code;
-        this.companyAddress = companyAddress;
+        this.companyAddress = companyAddress;        
         this.streetName = streetName;
         this.cityName = cityName;
         this.state = state;

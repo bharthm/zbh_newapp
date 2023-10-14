@@ -53,19 +53,19 @@ public class vendor {
 
     }
 
-    public vendor(String code, String companyName, String contactPerson, String firstName, String lastName) {
+    // public vendor(String code, String companyName, String contactPerson, String firstName, String lastName) {
 
-        this.code = "101";
-        this.companyName = "Company 1";
-        this.contactPerson = "contact Person 1";
-        this.firstName = "firstName 1";
-        this.lastName = "lastName 1";
-        this.status = "0";
-        this.website = companyName + ".com";
-        this.email = this.firstName + this.lastName + "@" + this.companyName +
-                ".com";
-        this.regDate = new Date();
-    }
+    //     this.code = "101";
+    //     this.companyName = "Company 1";
+    //     this.contactPerson = "contact Person 1";
+    //     this.firstName = "firstName 1";
+    //     this.lastName = "lastName 1";
+    //     this.status = "0";
+    //     this.website = companyName + ".com";
+    //     this.email = this.firstName + this.lastName + "@" + this.companyName +
+    //             ".com";
+    //     this.regDate = new Date();
+    // }
 
     public String getCode() {
         return code;
